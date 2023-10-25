@@ -30,6 +30,7 @@ class TTTBoard:
         # otherwise make the move 
         self.board[pos] = player
         return True
+<<<<<<< HEAD
 
     def has_won(self, player) -> bool:
         if player == "XXX" or player == "OOO":
@@ -48,6 +49,8 @@ class TTTBoard:
         for x in [0, 3, 6]:
             s += self.board[x+0] + " " + self.board[x+1] + " " + self.board[x+2] + "\n"
         return s
+=======
+>>>>>>> 8812f967763f44a04750435816d47fd130bbf31d
 
 def play_tic_tac_toe() -> None:
     """Uses your class to play TicTacToe"""
@@ -99,7 +102,10 @@ if __name__ == "__main__":
     brd = TTTBoard()
     print(brd.board)
     print(brd)
+<<<<<<< HEAD
     
+=======
+>>>>>>> 8812f967763f44a04750435816d47fd130bbf31d
     brd.make_move("X", 8)
     brd.make_move("O", 7)
     print(brd)
