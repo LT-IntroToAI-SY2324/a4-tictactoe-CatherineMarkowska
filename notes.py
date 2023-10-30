@@ -2,10 +2,10 @@
 
 # (define-struct dog [fur_color name age favorite_food])
 
- ### it says that there is no module 
-from curses.ascii import FF
-from os import fchdir
-from tkinter import N
+ ### it says that there is no module, commenting this out removes this
+# from curses.ascii import FF
+# from os import fchdir
+# from tkinter import N
 
 
 class Dog:
@@ -43,5 +43,5 @@ mydog.play_fetch(20)
 mydog.paint_dog("pink")
 chrisdog.play_fetch(3)
 
-print(mydog)
+print(mydog) 
 print(f"{chrisdog.name} has played fetch {chrisdog.fetch_count} times")
