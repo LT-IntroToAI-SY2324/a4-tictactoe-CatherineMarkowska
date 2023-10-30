@@ -34,11 +34,14 @@ class TTTBoard:
     def has_won(self, player) -> bool:
         """Check if the given player has won"""
         ps = [player] * 3 # this is either going to be ["x", "x", "x"] or ["O", "O", "O"]  
-        if self.board[:3] == ps or self.board[3:6] == ps or self.board[6:9] == ps: # horizontal
+        # horizontal
+        if self.board[:3] == ps or self.board[3:6] == ps or self.board[6:9] == ps: 
             return True 
-        if self.board[::3] == ps or self.board[1::3] == ps or self.board[2::3] == ps: #vertical 
+        # vertical
+        if self.board[::3] == ps or self.board[1::3] == ps or self.board[2::3] == ps: 
             return True
-        if self.board[::4] == ps or self.board[2:7:2] == ps: #diagonal
+        # diagonal
+        if self.board[::4] == ps or self.board[2:7:2] == ps: 
             return True 
         return False 
 
