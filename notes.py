@@ -44,9 +44,4 @@ mydog.paint_dog("pink")
 chrisdog.play_fetch(3)
 
 print(mydog)
-<<<<<<< HEAD
 print(f"{chrisdog.name} has played fetch {chrisdog.fetch_count} times")
-=======
-print(f"{chrisdog.name} has played fetch {chrisdog.fetch_count} times")
-
->>>>>>> 8812f967763f44a04750435816d47fd130bbf31d
